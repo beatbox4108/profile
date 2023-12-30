@@ -1,0 +1,19 @@
+name: "びーよん / beayon / beatbox4108"
+icon:
+  url: https://avatars.githubusercontent.com/u/68136638
+  circle_clipping: true
+description: "ただの音ゲーマーです。下手です。"
+games:
+  - name: "プロセカ"
+    description: "皆伝ランク8、達人ランク31"
+  - name: "ゲキチュウマイ"
+    description: "エンジョイ勢です。"
+  - name: "Arcaea"
+  - name: "phigros"
+
+# Color is from https://www.canva.com/colors/color-palettes/summer-splash/
+color:
+  fg_primary  : "#05445E" # Navy Blue
+  fg_secondary: "#189AB4" # Blue Grotto
+  bg_primary  : "#75E6DA" # Blue Green
+  bg_secondary: "#D4F1F4" # Baby Blue

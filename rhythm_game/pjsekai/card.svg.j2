@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080">
+    <defs>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;500;900');
+            text{font-family: 'Rounded Mplus 1c', 'M PLUS Rounded 1c';}
+        </style>
+
+        <linearGradient id="bg-gradient" x1="0" x2="100%" y1="0" y2="100%">
+            <stop offset="20%" stop-color="{{color.bg_primary}}" />
+            <stop offset="80%" stop-color="{{color.bg_secondary}}" />
+        </linearGradient>
+        <clipPath id="icon-mask">
+            <circle cx="225" cy="225" r="125" />
+        </clipPath>
+    </defs>
+    <rect width="1920" height="1080" fill="url(#bg-gradient)" />
+    <g>
+        <circle cx="225" cy="225" r="135" fill="{{color.fg_primary}}" />
+        <image href="{{image_dataurl}}" width="250" height="250" x="100" y="100" {% if icon.circle_clipping %}clip-path="url(#icon-mask)"{% endif %} />
+    </g>
+    <g>
+        <text x="400" y="150" font-size="60" font-weight="bolder" fill="{{color.fg_primary}}">
+            プロジェクトセカイ カラフルステージ feat.初音ミク
+        </text>
+        <path stroke="{{color.fg_secondary}}" stroke-width="3" d="m 400 175 h 1460" />
+        <text x="400" y="275" font-size="85" font-weight="bolder" fill="{{color.fg_primary}}">
+            {{name}}
+        </text>
+        <text x="400" y="350" font-size="60" font-weight="normal" fill="{{color.fg_secondary}}">
+            {{description}}
+        </text>
+    </g>
+    <g>
+        <text x="100" y="425" font-size="60" font-weight="bold" fill="{{color.fg_primary}}">
+            称号
+        </text>
+        <path stroke="{{color.fg_secondary}}" stroke-width="3" d="m 100 450 h 1060" />
+        <g>
+            {% for item in titles %}
+            <g>
+                <text x="125" y="{{425 + (100 * loop.index)}}" font-size="55" font-weight="bold" fill="{{color.fg_primary}}">
+                    {{item}}
+                </text>
+            </g>
+            {% endfor %}
+        </g>
+    </g>
+    <g>
+        <text x="1260" y="425" font-size="60" font-weight="bold" fill="{{color.fg_primary}}">
+            フルコンボ数
+        </text>
+        <path stroke="{{color.fg_secondary}}" stroke-width="3" d="m 1260 450 h 590" />
+        <g>
+            {% for item in fullcombo %}
+            <g>
+                <text x="1285" y="{{425 + (100 * loop.index)}}" font-size="55" font-weight="bold" fill="{{color.fg_primary}}">
+                    {{item.difficulty}}
+                </text>
+                <text x="1535" y="{{425 + (100 * loop.index)}}" font-size="55" font-weight="bold" fill="{{color.fg_secondary}}">
+                    {{item.value}}
+                </text>
+            </g>
+            {% endfor %}
+        </g>
+    </g>
+    <g>
+        <image href="../../github_icons/github-mark.svg" width="75" height="75" x="25" y="985" />
+        <text x="125" y="1045" font-size="55" font-weight="normal" fill="{{color.fg_primary}}">
+            @beatbox4108
+        </text>
+        <text x="950" y="1050" font-size="40" font-weight="normal" fill="{{color.fg_primary}}">
+            Made with Github Actions and Github Pages.
+        </text>
+    </g>
+</svg>

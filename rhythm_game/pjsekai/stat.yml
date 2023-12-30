@@ -1,0 +1,26 @@
+name: "びーよん / beayon / beatbox4108"
+icon:
+  url: https://avatars.githubusercontent.com/u/68136638
+  circle_clipping: true
+description: "まったり楽しんでます。"
+titles:
+  - "一歌ファン ランク8"
+  - "プラチナ"
+  - "皆伝 ランク8"
+  - "達人 ランク31"
+  - "船出の前のワンデイトリップ TOP3000"
+fullcombo:
+  - difficulty: "Hard"
+    value: 218
+  - difficulty: "Expert"
+    value: 307
+  - difficulty: "Master"
+    value: 76
+  - difficulty: "Append"
+    value: 1
+# Color is from https://www.canva.com/colors/color-palettes/raspberry-parfait/
+color:
+  fg_primary  : "#FF8691" # Coral
+  fg_secondary: "#F8AFA6" # Dusty Rose
+  bg_primary  : "#FADCD9" # Rose Quartz
+  bg_secondary: "#F9F1F0" # Cream
